@@ -12,7 +12,10 @@ class App extends Component {
 			articles: api.getArticles(),
 			authors: api.getAuthors()
 		}
-		console.log(this.state)
+	}
+
+	articleActions = {
+		lookupAuthor: authorId => this.state.authors[authorId]
 	}
 
 	render() {
@@ -21,10 +24,8 @@ class App extends Component {
 				<h2>Test</h2>
 				<ArticleList
 					articles={this.state.articles}
-					authors={this.state.authors}
+					articleActions={this.articleActions}
 				/>
-				{/* articles: {this.state.articles}
-				authors: {this.state.authors} */}
 			</>
 		);
 	}

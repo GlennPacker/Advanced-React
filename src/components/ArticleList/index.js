@@ -1,12 +1,16 @@
 import React from 'react';
 import Article from '../Article';
 
-const ArticleList = ({ articles, authors }) => {
+const ArticleList = ({ articles, articleActions }) => {
 	return (
 		<div>
 			{(Object.values(articles)).map(article => {
 				return (
-					<Article article={article} author={authors[article.authorId]} key={article.id} />
+					<Article
+						article={article}
+						actions={articleActions}
+						key={article.id}
+					/>
 				)
 			})}
 		</div>

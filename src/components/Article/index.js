@@ -1,12 +1,13 @@
 import React from 'react';
 
-const Article = ({ article, author }) => {
+const Article = ({ article, actions }) => {
+	const author = actions.lookupAuthor(article.authorId)
 	return (
 		<>
 			<div>{article.title}</div>
 			<div>{article.date}</div>
-			<div>{article.body}</div>
 			<div><a href={author.website}>{author.firstName} {author.lastName}</a></div>
+			<div>{article.body}</div>
 			<hr />
 		</>
 	);
