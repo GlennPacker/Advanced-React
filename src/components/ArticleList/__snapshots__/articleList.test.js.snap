@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleList Component renders connrectly 1`] = `
+<div>
+  <div />
+  <div />
+  <div>
+    <a>
+       
+    </a>
+  </div>
+  <div />
+  <hr />
+  <div />
+  <div />
+  <div>
+    <a>
+       
+    </a>
+  </div>
+  <div />
+  <hr />
+</div>
+`;
