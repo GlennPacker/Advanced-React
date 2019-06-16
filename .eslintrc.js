@@ -20,7 +20,7 @@ module.exports = {
     "react/prop-types": ["off"],
     "react/display-name": ["off"],
     "react/no-unescaped-entities": ["off"],
-    indent: ["error", 4, { SwitchCase: 1 }],
+    indent: ["error", "tab", { SwitchCase: 1 }],
     "no-console": [
       "warn",
       { allow: ["log", "clear", "info", "error", "dir", "trace"] }
